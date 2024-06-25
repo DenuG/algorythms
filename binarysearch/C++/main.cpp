@@ -1,6 +1,5 @@
 #include <vector>
 #include <iostream>
-#include <cmath>
 
 int binSearch(std::vector<int> vec, int target) 
 {
