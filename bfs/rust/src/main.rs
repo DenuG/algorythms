@@ -63,7 +63,8 @@ fn main()
 
     let mut graph = vec![vec![]; vertex_count];
 
-    for _ in 0..edge_count {
+    for _ in 0..edge_count 
+    {
         let line = lines.next().unwrap();
         let parts: Vec<i32> = line.split_whitespace().map(|x| x.parse().unwrap()).collect();
         let a = parts[0];
