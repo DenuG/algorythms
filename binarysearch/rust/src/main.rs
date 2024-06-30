@@ -1,20 +1,15 @@
-fn binary_search(arr: &[i32], target: i32) -> Option<usize> 
-{
+fn binary_search(arr: &[i32], target: i32) -> Option<usize> {
     let mut low = 0;
     let mut high = arr.len() - 1;
 
-    while low <= high 
-    {
+    while low <= high {
         let mid = low + (high - low) / 2;
 
-        if arr[mid] == target 
-        {
+        if arr[mid] == target {
             return Some(mid);
-        } else if arr[mid] < target 
-        {
+        } else if arr[mid] < target {
             low = mid + 1;
-        } else 
-        {
+        } else {
             high = mid - 1;
         }
     }
@@ -22,8 +17,7 @@ fn binary_search(arr: &[i32], target: i32) -> Option<usize>
     None
 }
 
-fn main() 
-{
+fn main() {
     let arr = vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     let target = 5;
 

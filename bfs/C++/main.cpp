@@ -6,7 +6,7 @@
 
 const int INF = 1e9;
 
-std::vector<int> bfs(const std::vector<std::vector<int>>& graph, int start) 
+std::vector<int> bfs(const std::vector<std::vector<int>>& graph, int start)
 {
     std::vector<int> dist(graph.size(), INF);
     std::vector<int> from(graph.size(), -1);
@@ -30,7 +30,6 @@ std::vector<int> bfs(const std::vector<std::vector<int>>& graph, int start)
             }
         }
     }
-
     return from;
 }
 
@@ -66,7 +65,7 @@ int main()
     std::cin >> start;
 
     std::vector<int> from = bfs(graph, start);
-    
+
 
     for (int v: getPath(from, 4))
     {
