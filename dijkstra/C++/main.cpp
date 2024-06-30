@@ -68,7 +68,7 @@ int main()
 
     std::vector<int> from = dijkstra(graph, start);
 
-    for (int v : getPath(from, 6))
+    for (int v : getPath(from, 13))
         std::cout << v << " ";
 
     return 0;
